@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'anjoman';
+    src: url("../fonts/anjoman.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: 'dana';
+    src: url("../fonts/dana-regula.ttf") format(truetype);
+}
+
+@font-face {
+    font-family: 'leyla';
+    src: url("../fonts/leyla.ttf") format(truetype);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: anjoman;
+}
