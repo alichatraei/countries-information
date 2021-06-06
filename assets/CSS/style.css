@@ -17,7 +17,7 @@
     --background-color: #edf2f4;
     --card-color: #FFD6A5;
 }
-
+/* GLOBAL */
 html,
 body {
     width: 100%;
@@ -30,7 +30,7 @@ body {
 * {
     font-family: "IranSans";
 }
-
+/* MAIN PAGE STYLES */
 /* Title textes */
 .title h2 {
     font-size: 3rem;
@@ -58,3 +58,4 @@ a:hover {
 .card {
     background-color: #BDB2FF;
 }
+/* ALL COUNTRIES STYLES */
