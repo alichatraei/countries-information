@@ -32,6 +32,12 @@ body {
     font-family: "IranSans";
 }
 
+#flag-thumbnail {
+    max-width: 10rem;
+    min-height: 10rem;
+    border-radius: 50%;
+}
+
 /* MAIN PAGE STYLES */
 /* Title textes */
 .title h2 {
@@ -140,7 +146,8 @@ a:hover {
     z-index: -1;
     filter: brightness(50%);
 }
-#countries{
+
+#countries {
     font-size: 2rem;
     border-radius: .4rem;
     padding: .4rem 1rem;

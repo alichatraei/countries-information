@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../assets/CSS/bootstrap.min.css">
     <!-- LOAD STYLE CSS FILE -->
     <link rel="stylesheet" href="../assets/CSS/style.css">
-    <link rel="stylesheet" href="https://cdn.map.ir/web-sdk/1.4.2/css/mapp.min.css">
-    <link rel="stylesheet" href="https://cdn.map.ir/web-sdk/1.4.2/css/fa/style.css">
+    <link rel="stylesheet" href="../assets/CSS/mapp.min.css">
+    <link rel="stylesheet" href="../assets/CSS/map-style.css">
 </head>
 
 <body id="allcountries-body">
@@ -30,70 +30,16 @@
     <!-- Main -->
     <main id="main">
         <section class="container countries-main my-5">
-            <article class="country py-4">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#country1" aria-expanded="true" aria-controls="country1">
-                                <img src="../assets/images/countries.png" id="flag" class="img-fluid mx-3">کشور
-                            </button>
-                        </h2>
-                        <div id="country1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body py-5">
-                                <div class="row align-items-center text-center gy-5 gy-md-0">
-                                    <div class="col-12 col-md-2"><img src="../assets/images/countries.png"
-                                            class="img-fluid" id="flag"></div>
-                                    <div class="col-12 col-md-10">
-                                        <div class="row">
-                                            <div class="col-12 col-md">
-                                                <h2>نام کشور : <span id="nativeName"></span></h2>
-                                            </div>
-                                            <div class="col-12 col-md">
-                                                <h2>ملیت : <span id="region"></span></h2>
-                                            </div>
-                                            <div class="col-12 col-md">
-                                                <h2>جمعیت : <span id="population"></span></h2>
-                                            </div>
-                                            <div class="col-12 col-md">
-                                                <h2>واحد پول : <span id="currency"></span></h2>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-5">
-                                            <div class="col-12 col-md">
-                                                <h2>پایتخت : <span id="capital"></span></h2>
-                                            </div>
-                                            <div class="col-12 col-md">
-                                                <h2>TLD(نام دامنه) : <span id="tld"></span></h2>
-                                            </div>
-                                            <div class="col-12 col-md">
-                                                <h2>کد تماس کشور : <span id="callingcode"></span></h2>
-                                            </div>
-                                        </div>
-                                        <div class="row mt-5 w-100 h-100">
-                                            <div class="col-12" id="map">
-                                                <!-- MAP.IR -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
         </section>
-
-
-
     </main>
     <!-- LOAD JS FILES -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../assets/JS/jquery.js"></script>
+    <script src="../assets/JS/mapp.min.js"></script>
+    <script src="../assets/JS/mapp.env.js"></script>
     <script src="../assets/JS/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.env.js"></script>
-    <script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.min.js"></script>
-    <script src="../assets/JS/map.js"></script>
+    <script src="../assets/JS/model.js"></script>
+    <script src="../assets/JS/controller.js"></script>
+    <!-- <script src="../assets/JS/map.js"></script> -->
 </body>
 
 </html>
