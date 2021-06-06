@@ -4,11 +4,6 @@ let latlng = [],
 // SHOW ALL COUNTRIES
 getData().then(() => showAllCountries(data))
 const showAllCountries = (result) => {
-    // console.log(result[0]['flag']);
-    addDataRowToSection(result)
-}
-
-function addDataRowToSection(data) {
     buildCountryRow(data)
     showMap()
 }
@@ -76,7 +71,7 @@ function buildCountryRow(data) {
     }
 
 }
-
+// Show map
 function showMap() {
     for (let counter = 0; counter < latlng.length; counter++) {
         let app = new Mapp({
