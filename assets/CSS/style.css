@@ -62,7 +62,8 @@ a:hover {
 }
 
 /* ALL COUNTRIES STYLES */
-#allcountries-body {
+#allcountries-body,
+#customCountry-body {
     background-color: transparent !important;
 }
 
@@ -117,4 +118,31 @@ a:hover {
 #map {
     width: 100%;
     height: 30rem;
+}
+
+/* CUSTOM COUNTRY STYLES */
+#customCountry-header {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+}
+
+#customCountry-header::after {
+    background-image: url('../images/country-header.jpg');
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: brightness(50%);
+}
+#countries{
+    font-size: 2rem;
+    border-radius: .4rem;
+    padding: .4rem 1rem;
+    outline: none;
 }
