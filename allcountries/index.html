@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../assets/CSS/bootstrap.min.css">
     <!-- LOAD STYLE CSS FILE -->
     <link rel="stylesheet" href="../assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdn.map.ir/web-sdk/1.4.2/css/mapp.min.css">
+    <link rel="stylesheet" href="https://cdn.map.ir/web-sdk/1.4.2/css/fa/style.css">
 </head>
 
 <body id="allcountries-body">
@@ -43,7 +45,7 @@
                         <div id="country1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body py-5">
-                                <div class="row align-items-center">
+                                <div class="row align-items-center text-center gy-5 gy-md-0">
                                     <div class="col-12 col-md-2"><img src="../assets/images/countries.png"
                                             class="img-fluid" id="flag"></div>
                                     <div class="col-12 col-md-10">
@@ -61,8 +63,21 @@
                                                 <h2>واحد پول : <span id="currency"></span></h2>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-12"></div>
+                                        <div class="row mt-5">
+                                            <div class="col-12 col-md">
+                                                <h2>پایتخت : <span id="capital"></span></h2>
+                                            </div>
+                                            <div class="col-12 col-md">
+                                                <h2>TLD(نام دامنه) : <span id="tld"></span></h2>
+                                            </div>
+                                            <div class="col-12 col-md">
+                                                <h2>کد تماس کشور : <span id="callingcode"></span></h2>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5 w-100 h-100">
+                                            <div class="col-12" id="map">
+                                                <!-- MAP.IR -->
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -77,8 +92,11 @@
 
     </main>
     <!-- LOAD JS FILES -->
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../assets/JS/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.env.js"></script>
+    <script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.min.js"></script>
+    <script src="../assets/JS/map.js"></script>
 </body>
 
 </html>
