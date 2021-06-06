@@ -2,13 +2,15 @@
 let latlng = [],
     mapId = []
 // SHOW ALL COUNTRIES
-getData().then(() => showAllCountries(data))
-const showAllCountries = (result) => {
-    buildCountryRow(data)
+getData().then(() => {
+    showAllCountries()
+})
+const showAllCountries = () => {
+    buildCountryRows(data)
     showMap()
 }
-
-function buildCountryRow(data) {
+// Build country rows
+function buildCountryRows(data) {
     const section = document.querySelector('.countries-main')
     for (let key = 0; key < 10; key++) {
         // INSERT LATLANG INTO VARIABLE
@@ -71,6 +73,7 @@ function buildCountryRow(data) {
     }
 
 }
+
 // Show map
 function showMap() {
     for (let counter = 0; counter < latlng.length; counter++) {

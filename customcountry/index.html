@@ -24,7 +24,7 @@
                 <div class="col-12 text-center">
                     <h1 class="text-center text-white">از توی این باکس کشورتو انتخاب کن و اطلاعاتشو ببین!</h1>
                     <select name="countries" class="mx-auto w-50 mt-4" id="countries">
-                        <option value="Iran">ایران</option>
+                        
                     </select>
                 </div>
             </div>
@@ -32,52 +32,16 @@
     </header>
     <!-- MAIN codes -->
     <main class="main">
-        <section class="container countries-main my-5 p-5">
-
-            <div class="row align-items-center text-center gy-5 gy-md-0">
-                <div class="col-12 col-md-2"><img src="../assets/images/countries.png" class="img-fluid" id="flag">
-                </div>
-                <div class="col-12 col-md-10">
-                    <div class="row">
-                        <div class="col-12 col-md">
-                            <h2>نام کشور : <span id="nativeName"></span></h2>
-                        </div>
-                        <div class="col-12 col-md">
-                            <h2>ملیت : <span id="region"></span></h2>
-                        </div>
-                        <div class="col-12 col-md">
-                            <h2>جمعیت : <span id="population"></span></h2>
-                        </div>
-                        <div class="col-12 col-md">
-                            <h2>واحد پول : <span id="currency"></span></h2>
-                        </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-12 col-md">
-                            <h2>پایتخت : <span id="capital"></span></h2>
-                        </div>
-                        <div class="col-12 col-md">
-                            <h2>TLD(نام دامنه) : <span id="tld"></span></h2>
-                        </div>
-                        <div class="col-12 col-md">
-                            <h2>کد تماس کشور : <span id="callingcode"></span></h2>
-                        </div>
-                    </div>
-                    <div class="row mt-5 w-100 h-100">
-                        <div class="col-12" id="map">
-                            <!-- MAP.IR -->
-                        </div>
-                    </div>
-                </div>
-                </article>
+        <section class="container country-main my-5 p-5">
         </section>
     </main>
     <!-- LOAD JS FILES -->
     <script src="../assets/JS/jquery.js"></script>
+    <script src="../assets/JS/mapp.min.js"></script>
+    <script src="../assets/JS/mapp.env.js"></script>
     <script src="../assets/JS/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.env.js"></script>
-    <script type="text/javascript" src="https://cdn.map.ir/web-sdk/1.4.2/js/mapp.min.js"></script>
-    <script src="../assets/JS/map.js"></script>
+    <script src="../assets/JS/model.js"></script>
+    <script src="../assets/JS/ShowCountryController.js"></script>
 </body>
 
 </html>
