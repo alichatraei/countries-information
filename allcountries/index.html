@@ -7,26 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اطلاعات تمامی کشورها</title>
     <!-- LOAD FAVICON -->
-    <link rel="shortcut icon" href="./assets/images/favIcon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favIcon.png" type="image/x-icon">
     <!-- LOAD BOOTSTRAP CSS FILE -->
-    <link rel="stylesheet" href="./assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/CSS/bootstrap.min.css">
     <!-- LOAD STYLE CSS FILE -->
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="../assets/CSS/style.css">
 </head>
 
-<body>
+<body id="allcountries-body">
     <!-- HTML codes -->
     <header id="header">
-        <div class="container">
-            <div class="row">
+        <div class="container h-100">
+            <div class="row w-100  h-100 justify-content-center align-items-center">
                 <div class="col-12">
-                    <h2>اطلاعات همه کشور هارو میتونی ببینی!</h2>
+                    <h1 class="text-center text-white">اطلاعات همه کشور هارو میتونی ببینی!</h1>
                 </div>
             </div>
         </div>
+        <video autoplay loop id="header-video">
+            <source src="../assets/images/header.mp4" type="video/mp4">
+        </video>
     </header>
+    <!-- Main -->
+    <main id="main">
+        <section class="container countries-main my-5">
+            <article class="country py-4">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#country1" aria-expanded="true" aria-controls="country1">
+                                <img src="../assets/images/countries.png" id="flag" class="img-fluid mx-3">کشور
+                            </button>
+                        </h2>
+                        <div id="country1" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body py-5">
+                                <div class="row align-items-center">
+                                    <div class="col-12 col-md-2"><img src="../assets/images/countries.png"
+                                            class="img-fluid" id="flag"></div>
+                                    <div class="col-12 col-md-10">
+                                        <div class="row">
+                                            <div class="col-12 col-md">
+                                                <h2>نام کشور : <span id="nativeName"></span></h2>
+                                            </div>
+                                            <div class="col-12 col-md">
+                                                <h2>ملیت : <span id="region"></span></h2>
+                                            </div>
+                                            <div class="col-12 col-md">
+                                                <h2>جمعیت : <span id="population"></span></h2>
+                                            </div>
+                                            <div class="col-12 col-md">
+                                                <h2>واحد پول : <span id="currency"></span></h2>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+
+    </main>
     <!-- LOAD JS FILES -->
-    <link rel="stylesheet" href="./assets/JS/bootstrap.bundle.min.js">
+
+    <script src="../assets/JS/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
